@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1st Class</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <h1>Hi there</h1>
+    <h2>Hi there</h2>
+    <h6>Hi there</h6>
+    
+    <p class="background">Hi! THis is my first class</p>
+    <div  class="background">
+        <div class="2nd-div" id="2nd_div">
+
+            <p id="demo_para">Hi! THis is my second class</p>
+            <p>Hi! THis is my third class</p>
+        </div>
+    </div>
+    <img src="./dummy-image.jpg" alt="My Dummy Image" class="image-class">
+    <img src="./dummy-image.jpg" alt="My Dummy Image" class="image-class">
+    <img src="./dummy-image.jpg" alt="My Dummy Image" class="image-class">
+    <div>
+        <input type="text" id="ds" name="input_1" placeholder="1st Number">
+        <input type="text" id="input_2" name="input_2" placeholder="2nd Number">
+        <br>
+        <select name="default" id="">
+            <option value="">Select a gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <a href="https://google.com" target="_blank">Click</a>
+        <br>
+        <br>
+        <button onclick="print();">This is a button</button>
+        <br>
+        <br>
+        <button onclick="checkInnerHtML();">Check InnerHTML button</button>
+    </div>
+
+    <div class="div1">
+        <p>Hi</p>
+    </div>
+    <div class="div2">
+        <p>Hi</p>
+    </div>
+    <div class="div3">
+        <p>Hi</p>
+    </div>
+    <div class="div4">
+        <p>Hi</p>
+    </div>
+    <script>
+        var count = 0;
+        function print() {
+            document.getElementById("demo_para").innerHTML = document.getElementById("ds").value + document.getElementById("input_2").value;
+        }
+        function checkInnerHtML() {
+            console.log(document.getElementById("2nd_div").innerHTML);
+        }
+    </script>
+</body>
+</html>
